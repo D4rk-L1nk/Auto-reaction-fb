@@ -1,0 +1,72 @@
+#!/data/data/com.termux/files/usr/bin/bash
+# FB React Tools
+# by まやちゃん
+
+black='\033[1;30m'
+red='\033[1;31m'
+green='\033[1;32m'
+yellow='\033[1;33m'
+blue='\033[1;34m'
+purple='\033[1;35m'
+cyan='\033[1;36m'
+white='\033[1;37m'
+
+
+echo $blue"         _______    ___               __  ";
+echo $blue"        / __/ _ )  / _ \___ ___ _____/ /_ ";
+echo $blue"       / _// _ |  / , _/ -_) _  / __/ __/ ";
+echo $blue"      /_/ /____/ /_/|_|\__/\_,_/\__/\__/ ";
+echo $red"       ------ D A R K  -  L I N K ------ ";
+echo $green" ===<[ROOT && MOD]>===BY===<[RUZTAM-D'ROCK]>===";
+echo $white"\n";
+sleep 1
+echo $yellow"PANEL PILIHAN:";
+echo "01.  Install bahan-bahan terlebih dahulu";
+echo "02.  Auto React Facebook";
+echo "00.  Keluar/Exit of this program"$red" ";
+read -p "[D4rk-L1nk] > "  act;
+
+if [ $act = 01 ] || [ $act = 1 ]
+then
+apt update -y && apt upgrade -y
+pkg install php -y
+clear
+pkg install figlet -y && pkg install toilet
+pkg install cowsay -y
+clear
+sleep 1
+figlet "S U C C E S S"
+sleep 2
+clear
+fi
+
+if [ $act = 02 ] || [ $act = 2 ]
+then
+apt update -y && apt upgrade -y
+clear
+php 1.php
+clear
+php 2.php
+sleep 2
+clear
+php 3.php
+fi
+
+if [ $act = 0 ] || [ $act = 00 ]
+then
+echo $red'TERIMA KASIH TELAH MENGGUNAKAN TOOLS INI'
+sleep 1
+echo $red'JIKA ADA MASALAH DALAM MEMAKAI TOOLS INI,'
+sleep 1
+echo $red'         HARAP HUBUNGI SAYA'
+sleep 2
+echo $red''
+sleep 1
+echo $red'wasallaam'
+echo $cyan"Ruztam D'Rock"
+echo $cyan"Dark-Link"
+echo $cyan'www.facebook.com/dark.link.666'
+echo $cyan'WA: +62 823 9820 7776'
+sleep 2
+exit
+fi
